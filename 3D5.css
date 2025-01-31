@@ -77,6 +77,7 @@ main {
     color:black;
     margin: 20px 0;
     padding: 20px;
+    font-weight: bold;
 }
 
 .content h3 {
