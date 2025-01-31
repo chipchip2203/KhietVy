@@ -1,0 +1,174 @@
+@charset "UTF-8";
+/* Phong cách mặc định (Desktop) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Avenir Light';
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .lg img {
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    gap: 150px;
+}
+
+nav a {
+	margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff7aa5;
+}
+
+main {
+    margin-top: 200px;
+    text-align: center;
+    padding: 10px;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.content h1 { 
+    font-size: 28px;
+    margin-top: -15px;
+}
+
+.content h2 {
+    font-style: italic;
+    color: #555;
+	font-size: 15px;
+    margin-bottom: 15px;
+	margin-top:1px;
+}
+
+.content h3 {
+	font-size: 28px;
+	margin-top: 50px;
+}
+
+.content blockquote {
+    color: #000000;
+    margin: 20px 0;
+    padding: 0 10px;
+}
+
+.content p {
+	color: #000000;
+    margin: 15px 0;
+}
+
+.grid-container {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    padding: 20px;
+}
+
+.grid-column {
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.grid-item1 img {
+    width: 1530px;
+	margin-top: -43px;
+	object-fit: cover;
+}
+
+.grid-item2 video {
+    width: 900px; 
+    height: auto; 
+	overflow: hidden;
+	display: inline-block;
+	border: 1px solid black;
+    border-radius: 7px;
+	margin-top: -14px;
+}
+
+
+/* Phong cách cho iPad (768px - 1024px) */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+.grid-container {
+    flex-direction: column; 
+    align-items: center; 
+    }
+
+.grid-item1 img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain;
+    }
+
+.grid-item2 video {
+    width: 100%; 
+    }
+}
+
+/* Phong cách cho Điện thoại (dưới 768px) */
+@media screen and (max-width: 767px) {
+header {
+    flex-direction: column;
+    gap: 15px;
+    }
+
+nav {
+    display: flex;
+    gap: 110px;
+    }
+
+.grid-container {
+    flex-direction: column; 
+    gap: 15px;
+    padding: 10px;
+    }
+
+.grid-item1 img {
+	width: 100%; 
+    height: 100%; 
+    object-fit: contain;
+	}
+	
+.grid-item2 video {
+    width: 100%; 
+    }
+
+h1 {
+   font-size: 24px;
+	}
+}

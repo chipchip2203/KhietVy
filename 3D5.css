@@ -1,0 +1,165 @@
+/* Phong cách mặc định (Desktop) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Avenir Light';
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .lg img {
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    gap: 150px;
+}
+
+nav a {
+	margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff7aa5;
+}
+
+main {
+    margin-top: 200px;
+    text-align: center;
+    padding: 10px;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 28px;
+    margin-top: -15px;
+}
+
+.content h2 {
+    font-style: italic;
+    color: #555;
+	font-size: 15px;
+    margin-bottom: 15px;
+	margin-top:1px;
+}
+
+.content blockquote {
+    color:black;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.content h3 {
+	font-size: 28px;
+	margin-top: -5px;
+	margin-bottom: -13px;
+}
+
+.vid.content h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.grid-container {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Căn giữa các cột */
+    gap: 10px; /* Khoảng cách giữa các cột */
+    padding: 20px;
+}
+
+.grid-item1 img {
+    width: 1530px;
+	margin-top: -43px;
+	object-fit: cover;
+}
+
+.image1 {
+    display: flex; /* Sử dụng Grid Layout */   
+    gap: 10px; /* Tạo khoảng cách giữa các ảnh */
+    margin-left: 50px;
+  }
+  
+.image2  {
+    display: flex; /* Sử dụng Grid Layout */
+    gap: 10px; /* Tạo khoảng cách giữa các ảnh */
+    margin-left: 50px;
+  }
+
+.image3 {
+    display: flex; /* Sử dụng Grid Layout */
+    gap: 10px; /* Tạo khoảng cách giữa các ảnh */
+    margin-left: 50px;
+}
+
+.grid-item2 {
+	padding-left: 80px;
+}
+
+.grid-item2 .image1 img {
+    width: auto; /* Chiều rộng của ảnh, bạn có thể tùy chỉnh */
+    height: 465px; /* Tự động điều chỉnh chiều cao để giữ tỷ lệ ảnh */
+    border-radius: 10px; /* Bo góc các ảnh */
+}
+
+.grid-item2 .image2 img {
+    width: auto; /* Chiều rộng của ảnh, bạn có thể tùy chỉnh */
+    height: 470px; /* Tự động điều chỉnh chiều cao để giữ tỷ lệ ảnh */
+    border-radius: 10px; /* Bo góc các ảnh */
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+.grid-item2 .image3 img {
+    width: auto; /* Chiều rộng của ảnh, bạn có thể tùy chỉnh */
+    height: 375px; /* Tự động điều chỉnh chiều cao để giữ tỷ lệ ảnh */
+    border-radius: 10px; /* Bo góc các ảnh */
+  }
+
+.grid-column2 h4 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.grid-column2 h5 {
+    font-size: 18px;
+    margin-top: 0px;
+}
+  
+.grid3 img, .grid4 img {
+    width: 900px; /* Kích thước cố định cho ảnh */
+    height: auto; /* Duy trì tỷ lệ gốc */
+	overflow: hidden;
+    border-radius: 7px;
+    margin-top: 15px;
+}

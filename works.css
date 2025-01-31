@@ -1,0 +1,174 @@
+/* Phong cách mặc định (Desktop) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Avenir Light";
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+header .lg img {
+	border-radius: 50%;}
+
+nav {
+    display: flex;
+    gap: 150px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ECA3C8;
+}
+
+.mainpicture {
+    width: 100%;
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.drawings,
+.storyboarding,
+.animation {
+    width: auto;
+    height: 250px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.drawings {
+    margin-left: 34px;
+}
+
+.animation {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.image-wrapper:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(10, 10, 10);
+    font-size: 20px;
+	font-family: 'Avenir Heavy';
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.image-wrapper:hover .overlay {
+    opacity: 1;
+}
+
+.drawing-overlay {
+    position: absolute;
+	top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    color: rgb(10, 10, 10);
+	font-size: 20px;
+	font-family: 'Avenir Heavy';
+	text-align: center;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+	pointer-events: none;
+}
+
+.image-wrapper:hover .drawing-overlay {
+    opacity: 1;
+}
+
+/* Phong cách cho iPad (768px - 1024px) */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+nav {
+    gap: 80px; 
+    }
+
+.mainpicture {
+    gap: 10px; 
+    }
+
+.drawings,
+.storyboarding,
+.animation {
+    height: 200px; 
+    }
+
+.overlay {
+    font-size: 20px; 
+    }
+}
+
+/* Phong cách cho Điện thoại (dưới 768px) */
+@media screen and (max-width: 767px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        gap: 20px;
+    }
+
+    .mainpicture {
+        flex-direction: column; 
+        row-gap: 20px;
+    }
+
+    .storyboarding, .animation {
+      width: 300px ;
+      height: auto; 
+    }
+    .drawings {
+      width: 300px ;
+      height: auto; 
+      margin-left: 0px;
+    }
+
+    .overlay {
+        font-size: 24px; 
+    }
+	
+	.drawing-overlay {
+		left: 49%;
+		font-size: 24px;
+	}
+}

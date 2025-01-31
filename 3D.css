@@ -1,0 +1,191 @@
+@charset "UTF-8";
+/* Phong cách mặc định (Desktop) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Avenir Light';
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .lg img {
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    gap: 150px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff7aa5;
+}
+
+main {
+    margin-top: 200px;
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 32px;
+	font-family: 'Avenir Black';
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.grid-container {
+    justify-content: center;
+    display: flex;
+    gap: 5px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.grid-item5 {
+	margin: 5.5px;
+}
+
+.grid-item1 img, .grid-item3 img {
+    width: 450px;
+    height: auto;
+    border-radius: 7px;
+    border: 1px solid black;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.grid-item2 img, .grid-item4 img {
+    width: 605px;
+    height: auto;
+    border-radius: 7px;
+    border: 1px solid black;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.grid-item5 img {
+    width: 1062px;
+    height: auto;
+    border-radius: 7px;
+    border: 1px solid black;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.grid-item1 img:hover, .grid-item2 img:hover, .grid-item3 img:hover, .grid-item4 img:hover {
+    transform: scale(1.005);
+    filter: brightness(1.2);
+}
+
+.grid-item5 img:hover {
+    transform: scale(1.002);
+    filter: brightness(1.2);
+}
+
+/* Phong cách cho iPad (768px - 1024px) */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+nav {
+    gap: 100px; 
+    }
+
+.grid-container {
+    justify-content: center;
+    display: flex;
+    gap: 5px;
+    }
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    }
+
+.grid-item1 img, .grid-item3 img {
+    width: 298px; 
+    }
+
+.grid-item2 img, .grid-item4 img {
+    width: 400px; 
+    }
+
+.grid-item5 img {
+    width: 699px; 
+    }
+}
+
+/* Phong cách cho Điện thoại (dưới 768px) */
+@media screen and (max-width: 767px) {
+header {
+    flex-direction: column;
+    gap: 15px;
+    }
+
+nav {
+    gap: 10px;
+    }
+    
+h1 {
+   font-size: 16px;
+   margin-top:15px ;
+   margin-bottom: 20px;
+   font-weight: bold;
+  }
+  
+.grid-container {
+   flex-direction: column; 
+   gap: 15px;
+   padding: 0 10px;
+    }
+
+.grid-item1 img, 
+.grid-item3 img {
+    width: 100%; 
+    }
+
+.grid-item2 img{
+    width: 100%; 
+	margin-top: -10px;
+    }
+
+.grid-item4 img {
+	width: 100%; 
+    margin-top: 1px;
+	}
+	
+.grid-item5 img {
+    width: 100%; 
+    }
+}

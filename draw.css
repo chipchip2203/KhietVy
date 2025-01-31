@@ -1,0 +1,299 @@
+@charset "UTF-8";
+/* Phong cách mặc định (Desktop) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Avenir Light';
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .lg img {
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    gap: 150px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff7aa5;
+}
+
+main {
+    margin-top: 200px;
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+	font-family: 'Avenir Black';
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.grid-item1 img, .grid-item2 img, .grid-item3 img, .grid-item4 img, .grid-item5 img, .grid-item6 img {
+    width: 100%;
+    height: auto;
+	border-radius: 10px;
+    overflow: hidden;
+	border: 1px solid black;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.grid-item1 img:hover, .grid-item2 img:hover, .grid-item3 img:hover, .grid-item4 img:hover, .grid-item5 img:hover, .grid-item6 img:hover {
+    transform: scale(1.005);
+    filter: brightness(1.2);
+}
+
+.image-wrapper {
+    position: relative; 
+    display: inline-block; 
+}
+
+.image-wrapper img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+}
+
+.overlay1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(10, 10, 10);
+    font-size: 40px;
+	font-family: 'Avenir Black';
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.image-wrapper:hover .overlay1 {
+    opacity: 1;
+}
+
+.overlay3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(10, 10, 10);
+    font-size: 40px;
+	font-family: 'Avenir Black';
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.image-wrapper:hover .overlay3 {
+    opacity: 1;
+}
+
+.overlay5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(10, 10, 10);
+    font-size: 40px;
+	font-family: 'Avenir Black';
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.image-wrapper:hover .overlay5 {
+    opacity: 1;
+}
+
+.overlay2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(10, 10, 10);
+    font-size: 40px;
+	font-family: 'Avenir Black';
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.image-wrapper:hover .overlay2 {
+    opacity: 1;
+}
+
+.overlay4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(10, 10, 10);
+    font-size: 40px;
+	font-family: 'Avenir Black';
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.image-wrapper:hover .overlay4 {
+    opacity: 1;
+}
+
+.overlay6 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(10, 10, 10);
+    font-size: 40px;
+	font-family: 'Avenir Black';
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.image-wrapper:hover .overlay6 {
+    opacity: 1;
+}
+
+/* Phong cách cho iPad (768px - 1024px) */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+header {
+        padding: 15px 5%;
+    }
+
+nav {
+     gap: 80px; 
+    }
+
+.grid-container {
+      display: flex;
+      gap: 0px;
+      padding: 0px;
+  }
+  
+.column {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+  }
+
+.grid-item1, .grid-item3, .grid-item5 {
+      max-width: 98%; 
+      text-align: right;
+  }
+
+.grid-item2, .grid-item4, .grid-item6 {
+    max-width: 80%; 
+    margin: 0 0; 
+  }
+
+.overlay1 {
+    font-size: 25px;
+}
+	
+.overlay2 {
+    left: 40%;
+    font-size: 25px;
+}
+
+.overlay3 {
+    font-size: 25px;
+}
+	
+.overlay4 {
+    left: 40%;
+    font-size: 25px;
+}
+	
+.overlay5 {
+    font-size: 25px;
+}
+	
+.overlay6 {
+    left: 40%;
+    font-size: 25px;
+}
+	
+	
+}
+
+/* Phong cách cho Điện thoại (dưới 768px) */
+@media screen and (max-width: 767px) {
+header {
+    flex-direction: column;
+    gap: 10px;
+    }
+
+nav {
+    gap: 10px;
+    }
+
+.grid-container {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    }
+
+.grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6 {
+    max-width: 95%; 
+    margin: 0 auto; 
+    }
+
+h1 {
+    font-size: 24px;
+    }
+}

@@ -1,0 +1,144 @@
+/* Phong cách mặc định (Desktop) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Avenir Light';
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .lg img {
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    gap: 150px;
+}
+
+nav a {
+	margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff7aa5;
+}
+
+main {
+    margin-top: 200px;
+    text-align: center;
+    padding: 10px;
+}
+
+.content {
+    padding: 0px;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 28px;
+    margin-bottom: 2px;
+}
+
+.content p {
+    font-size:15px ;
+    font-style: italic;
+    color: black;
+    margin-bottom: 40px;
+}
+
+.word {
+    margin-top: 20px;
+    margin-bottom: 35px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.word h2 {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.word h3 {
+    font-size: 15px;
+}
+
+.content h4 {
+    font-size: 28px;
+    margin-bottom: -10px;
+}
+
+.content video{
+    margin-top: 15px;
+	border: 1px solid black;
+    border-radius: 7px;
+}
+
+.grid-container {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Căn giữa các cột */
+    gap: 10px; /* Khoảng cách giữa các cột */
+    padding: 20px;
+}
+
+.word2 {
+    margin-left: 540px;
+    margin-right: 540px;
+}
+
+.word2 h5 {
+    font-size: 28px;
+    font-style: italic;
+    color: black;
+    font-weight: bold;
+}
+
+.word2 h6 {
+    font-size: 18px;
+    font-style: italic;
+}
+  
+/* Cập nhật các ảnh */
+.grid-column1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa các ảnh theo chiều ngang */
+    gap: 10px; /* Khoảng cách giữa các ảnh */
+}
+
+.grid-column1 img {
+    width: 800px; /* Đảm bảo ảnh không bị vỡ bố cục */
+    height: auto;
+}
+
+.grid-item1 img {
+    width: 2500px;
+	margin-top: -40px;
+	object-fit: cover;
+}
