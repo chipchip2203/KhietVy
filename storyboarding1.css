@@ -114,8 +114,8 @@ main {
 
 .word2 h5 {
     font-size: 28px;
-    font-style: italic;
     color: black;
+    margin-top: 30px;
     font-weight: bold;
 }
 
