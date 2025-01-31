@@ -1,6 +1,6 @@
 /* Phong cách mặc định (Máy tính - Desktop) */
 header {
-    display: flex;
+   display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 10%;
