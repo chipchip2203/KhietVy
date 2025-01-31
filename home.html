@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vy's Profile</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <header>
+     <div class="lg">
+        <a href="home.html"><img src="signature.png" alt="Vy Logo" width="auto" height="110"></a>
+     </div>
+        <nav>
+           <a href="home.html">HOME</a>
+           <a href="works.html">WORKS</a>
+        </nav>
+  </header>
+   <div class="container">
+      <div class="profile">
+          <div class="signature">
+               <img src="self illustration.png" alt="Vy Signature"></div>
+          <div class="info">
+               <h1>Xin chao! This is <span style="color: #ECA3C8;">Vy</span>.</h1>
+               <p>I'm a junior at the School of the Art Institute of Chicago, currently pursuing a Bachelor of Fine Arts while focusing on 2D and 3D Animation.</p>
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+<p>This is my <span id="click-text" style="cursor: pointer; color: rgb(231, 74, 179); text-decoration: underline;">resume</span>. I'm open to internship opportunities, collaboration, and freelance in Animation (2D/3D).</p>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 50px;
+    }
+
+    /* Ẩn bảng hình ảnh ban đầu */
+    .image-popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        width: 35%;
+        max-height: 100%;
+    }
+
+    /* Làm mờ nền khi popup xuất hiện */
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+
+    /* Bố trí hình ảnh nằm ngang */
+    .image-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px; /* Khoảng cách giữa các hình ảnh */
+        align-items: center;
+        height: 100%;
+    }
+
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+</style>
+
+<div class="redume">
+    <div class="overlay" id="overlay"></div>
+
+    <div class="image-popup" id="popup">
+        <div class="image-container" id="image-container">
+            <img src="resume1.png" alt="Hình ảnh minh họa 1">
+            <img src="resume2.png" alt="Hình ảnh minh họa 2">
+        </div>
+    </div>
+
+    <script>
+        const clickText = document.getElementById("click-text");
+        const popup = document.getElementById("popup");
+        const overlay = document.getElementById("overlay");
+
+        clickText.addEventListener("click", function () {
+            popup.style.display = "block";
+            overlay.style.display = "block";
+            setTimeout(function () {
+                popup.style.opacity = 1;
+            }, 10);
+        });
+
+        overlay.addEventListener("click", closePopup);
+
+        function closePopup() {
+            popup.style.opacity = 0;
+            setTimeout(function () {
+                popup.style.display = "none";
+                overlay.style.display = "none";
+            }, 500);
+        }
+    </script>
+</div>
+
+
+
+      </div>
+   </div>
+</body>
+</html>
