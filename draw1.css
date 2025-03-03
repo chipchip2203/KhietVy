@@ -74,8 +74,9 @@ h2 {
     font-weight: bold;
 }
 h3 {
+    margin-top: 15px;
     color: black;
-	font-family: 'Avenir Black';
+    font-family: 'Avenir Black';
     font-size: 25px;
     font-weight: bold;
 }
@@ -86,6 +87,7 @@ h3 {
     font-size: 18px;
 }
 
+
 .grid-column1 {
     display: flex;
     flex-direction: column; /* Xếp các phần tử con theo chiều dọc */
@@ -93,8 +95,96 @@ h3 {
     gap: 15px; /* Tạo khoảng cách giữa các ảnh */
 }
 
+.grid-column1 {
+    position: relative;
+    display: inline-block;
+    width: 1100px; /* Đảm bảo container có kích thước cố định */
+}
+
 .grid-column1 img {
-    width: 1100px; 
+    width: 100%; 
     height: auto;
     border-radius: 7px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Ảnh thay thế (ẩn đi mặc định) */
+.grid-column1 .hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1100px;
+    height: auto;
+    object-fit: cover; /* Đảm bảo ảnh không bị méo */
+    opacity: 0; /* Ẩn ảnh thay thế */
+}
+
+/* Khi rê chuột vào, hiển thị ảnh thay thế */
+.grid-column1:hover .hover-img {
+    opacity: 1;
+}
+
+
+
+
+
+.grid-column1 {
+    position: relative;
+    display: inline-block;
+    width: 1100px; /* Đảm bảo container có kích thước cố định */
+}
+
+.grid-column1 img {
+    width: 100%; 
+    height: auto;
+    border-radius: 7px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Ảnh thay thế (ẩn đi mặc định) */
+.grid-column1 .hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1100px;
+    height: auto;
+    object-fit: cover; /* Đảm bảo ảnh không bị méo */
+    opacity: 0; /* Ẩn ảnh thay thế */
+}
+
+/* Khi rê chuột vào, hiển thị ảnh thay thế */
+.grid-column1:hover .hover-img {
+    opacity: 1;
+}
+
+
+
+/* Định dạng chung cho các ảnh */
+.grid-column1, .grid3 {
+    position: relative;
+    display: inline-block;
+    width: 1100px; /* Đảm bảo container có kích thước cố định */
+}
+
+.grid-column1 .hover-img1, .grid3 .hover-img1 {
+    width: 100%; 
+    height: auto;
+    border-radius: 7px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Ảnh thay thế (ẩn đi mặc định) */
+.grid-column1 .hover-img1, .grid3 .hover-img1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1100px;
+    height: auto;
+    object-fit: cover; /* Đảm bảo ảnh không bị méo */
+    opacity: 0; /* Ẩn ảnh thay thế */
+}
+
+/* Khi rê chuột vào, hiển thị ảnh thay thế */
+.grid-column1:hover .hover-img1, .grid3:hover .hover-img1 {
+    opacity: 1;
 }
