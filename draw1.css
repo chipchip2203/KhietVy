@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Avenir Light';
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .lg img {
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    gap: 150px;
+}
+
+nav a {
+	margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff7aa5;
+}
+
+main {
+    margin-top: 200px;
+    text-align: center;
+    padding: 10px;
+}
+
+p1 {
+    color: black;
+	font-family: 'Avenir Black';
+    font-size: 32px;
+}
+p {
+    color: black;
+    font-style: italic; /* In nghiêng */
+    font-family: 'Avenir Black';
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+h2 {
+    color: black;
+	font-family: 'Avenir Black';
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+h3 {
+    color: black;
+	font-family: 'Avenir Black';
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.grid-column1 p4 {
+    color: black;
+    font-family: 'Avenir Black';
+    font-size: 18px;
+}
+
+.grid-column1 {
+    display: flex;
+    flex-direction: column; /* Xếp các phần tử con theo chiều dọc */
+    align-items: center; /* Căn giữa theo chiều ngang */
+    gap: 15px; /* Tạo khoảng cách giữa các ảnh */
+}
+
+.grid-column1 img {
+    width: 1100px; 
+    height: auto;
+    border-radius: 7px;
+}

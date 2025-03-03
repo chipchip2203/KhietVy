@@ -39,7 +39,7 @@ nav {
 }
 
 nav a {
-    margin: 0 15px;
+	margin: 0 15px;
     text-decoration: none;
     color: #333;
     font-size: 16px;
@@ -65,235 +65,70 @@ h1 {
 
 .grid-container {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    justify-content: center; 
+    gap: 20px; 
     padding: 20px;
 }
 
-.column {
+.grid-column {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: column; 
+    align-items: center; 
+    row-gap: 3px; 
 }
-
-.grid-item1 img, .grid-item2 img, .grid-item3 img, .grid-item4 img, .grid-item5 img, .grid-item6 img {
-    width: 100%;
-    height: auto;
-	border-radius: 10px;
-    overflow: hidden;
+  
+/* Cập nhật các ảnh */
+.grid-item1 img {
+    width: 900px; 
+    height: auto; 
+	overflow: hidden;
+	display: inline-block;
 	border: 1px solid black;
+    border-radius: 7px;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.grid-item1 img:hover, .grid-item2 img:hover, .grid-item3 img:hover, .grid-item4 img:hover, .grid-item5 img:hover, .grid-item6 img:hover {
+/* Hiệu ứng khi hover */
+.grid-item1 img:hover {
     transform: scale(1.005);
-    filter: brightness(1.2);
-}
-
-.image-wrapper {
-    position: relative; 
-    display: inline-block; 
-}
-
-.image-wrapper img {
-    width: 100%; 
-    height: auto; 
-    border-radius: 10px; 
-}
-
-.overlay1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(10, 10, 10);
-    font-size: 40px;
-	font-family: 'Avenir Black';
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    pointer-events: none;
-}
-
-.image-wrapper:hover .overlay1 {
-    opacity: 1;
-}
-
-.overlay3 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(10, 10, 10);
-    font-size: 40px;
-	font-family: 'Avenir Black';
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    pointer-events: none;
-}
-
-.image-wrapper:hover .overlay3 {
-    opacity: 1;
-}
-
-.overlay5 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(10, 10, 10);
-    font-size: 40px;
-	font-family: 'Avenir Black';
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    pointer-events: none;
-}
-
-.image-wrapper:hover .overlay5 {
-    opacity: 1;
-}
-
-.overlay2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(10, 10, 10);
-    font-size: 40px;
-	font-family: 'Avenir Black';
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    pointer-events: none;
-}
-
-.image-wrapper:hover .overlay2 {
-    opacity: 1;
-}
-
-.overlay4 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(10, 10, 10);
-    font-size: 40px;
-	font-family: 'Avenir Black';
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    pointer-events: none;
-}
-
-.image-wrapper:hover .overlay4 {
-    opacity: 1;
-}
-
-.overlay6 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(10, 10, 10);
-    font-size: 40px;
-	font-family: 'Avenir Black';
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    pointer-events: none;
-}
-
-.image-wrapper:hover .overlay6 {
-    opacity: 1;
+    filter: brightness(1.1);
 }
 
 /* Phong cách cho iPad (768px - 1024px) */
 @media screen and (max-width: 1024px) and (min-width: 768px) {
-header {
-        padding: 15px 5%;
+    .grid-container {
+        flex-direction: column; 
+        align-items: center; 
     }
 
-nav {
-     gap: 80px; 
+    .grid-item1 img, .grid-item2 img {
+        width: 100%; 
     }
-
-.grid-container {
-      display: flex;
-      gap: 0px;
-      padding: 0px;
-  }
-  
-.column {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-  }
-
-.grid-item1, .grid-item3, .grid-item5 {
-      max-width: 98%; 
-      text-align: right;
-  }
-
-.grid-item2, .grid-item4, .grid-item6 {
-    max-width: 80%; 
-    margin: 0 0; 
-  }
-
-.overlay1 {
-    font-size: 25px;
-}
-	
-.overlay2 {
-    left: 40%;
-    font-size: 25px;
-}
-
-.overlay3 {
-    font-size: 25px;
-}
-	
-.overlay4 {
-    left: 40%;
-    font-size: 25px;
-}
-	
-.overlay5 {
-    font-size: 25px;
-}
-	
-.overlay6 {
-    left: 40%;
-    font-size: 25px;
-}
-	
-	
 }
 
 /* Phong cách cho Điện thoại (dưới 768px) */
 @media screen and (max-width: 767px) {
 header {
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     }
 
 nav {
-    gap: 10px;
+    display: flex;
+    gap: 110px;
     }
 
 .grid-container {
-    flex-direction: column;
+    flex-direction: column; 
     gap: 15px;
     padding: 10px;
     }
 
-.grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6 {
-    max-width: 95%; 
-    margin: 0 auto; 
+.grid-item1 img {
+    width: 100%; 
     }
 
 h1 {
-    font-size: 24px;
+   font-size: 24px;
     }
 }
