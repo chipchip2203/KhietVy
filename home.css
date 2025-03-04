@@ -16,7 +16,7 @@ header .lg img {
 nav {
     display: flex;
     gap: 150px;
-    font-family: 'Avenir Light';
+    font-family: 'Avenir Light', sans-serif;
 }
 
 nav a {
@@ -62,14 +62,14 @@ nav a:hover {
 .info h1 {
     font-size: 40px;
     margin-bottom: 5px;
-    font-family: 'Avenir Black Oblique';
+    font-family: 'Avenir Black Oblique', sans-serif;
     font-style: italic;
 }
 
 .info p {
     font-size: 16px;
     line-height: 1.5;
-    font-family: 'Avenir Light';
+    font-family: 'Avenir Light', sans-serif;
     font-style: italic;
 }
 
