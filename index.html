@@ -52,15 +52,16 @@
     .image-popup {
         display: none;
         position: fixed;
-        top: 50%;
+        top: 0;
         left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 20px;
+        transform: translateX(-50%);
+        padding: 0;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         z-index: 1000;
         opacity: 0;
         transition: opacity 0.5s ease-in-out;
         width: 61%;
+        height: 100vh; /* Chiều cao toàn màn hình */
         max-height: 100%;
     }
 
@@ -76,6 +77,12 @@
         z-index: 999;
     }
 
+    .image-container iframe {
+    width: 100%;
+    height: 100vh; /* Đảm bảo iframe chiếm toàn bộ chiều cao của popup */
+    border: none; /* Loại bỏ viền nếu có */
+    }
+    
     /* Bố trí hình ảnh nằm ngang */
     .image-container {
         display: flex;
