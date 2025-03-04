@@ -36,11 +36,16 @@ nav a:hover {
 .container {
     margin-top: 5px;
     padding: 0 20%;
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
 }
 
 .container .profile {
     display: flex;
     align-items: center;
+    justify-content: center; /* Căn giữa nội dung bên trong */
+    text-align: center;
+}
 }
 
 .signature img {
@@ -64,7 +69,7 @@ nav a:hover {
 .info p {
     font-size: 16px;
     line-height: 1.5;
-	font-family: 'Avenir Light';
+    font-family: 'Avenir Light';
     font-style: italic;
 }
 
