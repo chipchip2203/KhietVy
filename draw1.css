@@ -81,12 +81,13 @@ h3 {
     font-weight: bold;
 }
 
-.grid-column1 p4 {
+.grid-column1 p {
     color: black;
     font-family: 'Avenir Black';
     font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 25px;
 }
-
 
 .grid-column1 {
     display: flex;
