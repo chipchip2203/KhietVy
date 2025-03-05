@@ -56,37 +56,28 @@ main {
 
 p1 {
     color: black;
-	font-family: 'Avenir Black';
-    font-size: 32px;
+    font-size: 28px;
 }
-.content p {
+p {
     color: black;
     font-style: italic; /* In nghiêng */
-    font-family: 'Avenir Black';
-    font-size: 18px;
+    font-size: 15px;
     margin-bottom: 20px;
 }
 h2 {
-    color: black;
-	font-family: 'Avenir Black';
-    font-size: 25px;
+    font-size: 15px;
     margin-bottom: 20px;
-    font-weight: bold;
-}
-h3 {
-    margin-top: 15px;
-    color: black;
-	font-family: 'Avenir Black';
-    font-size: 25px;
-    font-weight: bold;
 }
 
-.grid-column1 p {
+h3 {
+    margin-top: 13px;
     color: black;
-    font-family: 'Avenir Black';
+    font-size: 25px;
+}
+
+.grid-column1 p4 {
+    color: black;
     font-size: 18px;
-    margin-top: 5px;
-    margin-bottom: 25px;
 }
 
 .grid-column1 {
